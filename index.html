@@ -22,6 +22,21 @@
 
     
     <script src="https://doc.alcospot.ru:8090/Scripts/callback-request.js"></script>
+    
+    <script>
+       $(document).ready(function () { 
+    var height_document = $(document).height(); 
+    var height_client = document.body.clientHeight; 
+     
+    if(height_document > height_client) { 
+        $("footer").addClass( "footerFix" ) 
+    } else 
+	{
+		$("footer").removeClass( "footerFix" )
+	}
+}); 
+        </script>
+    
 </head>
 <body>
         <div class="container" style="vertical-align: middle;">

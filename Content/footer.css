@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.footerFix {
+  position: fixed;
+  bottom: 0; }
+
 .footer2,
 .footer_unauth {
     background-color: #EBEBEB;
