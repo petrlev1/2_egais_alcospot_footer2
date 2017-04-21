@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - ПОРТАЛ АЛКОСПОТ ЕГАИС</title>
+    <link href="/Content/css?0" rel="stylesheet"/>
+
+    <link href="/Content/Site.css?0" rel="stylesheet"/>
+
+    <link href="/Content/footer.css?0" rel="stylesheet"/>
+
+    <link href="https://doc.alcospot.ru:8090/Content/callback-request.css" rel="stylesheet" />
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <script src="/bundles/jquery?v=Tx4K2BSWp7cY9xCnAkTCTSdrTSvQU1JIuVxQOqs2VGQ1"></script>
+
+    <script src="/bundles/bootstrap?v=mAM5VJntNPPew5SBx3BxQhdcQhYpO8lQc1Uz_6D5xCI1"></script>
+
+    <script src="/Scripts/jquery.scrollUp.min.js"></script>
+
+    
+    <script src="https://doc.alcospot.ru:8090/Scripts/callback-request.js"></script>
+</head>
+<body>
+        <div class="container" style="vertical-align: middle;">
+            <a href="/">
+                <img src="/Content/Images/logo_alcospot.png" style="width: 232px; height: 57px; margin: 10px 10px;" />
+            </a>
+            <h4 style="display: inline-block; position: relative; top: 5px; color: #1B75BB;">ПОРТАЛ АЛКОСПОТ ЕГАИС</h4>
+            <span style="color: lightgrey; font-size: x-small; display: inline-block;">v&zwnj;2.7.11</span>
+                <a id="logoutMenu" href='/Account/Logout'>Выход</a>
+        </div>
+
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="mainmenu">
+            <ul class="nav navbar-nav navbar-left">
+
+
+    <li id="menu-customer-home">
+        <a href="/Client">Главная</a>
+    </li>
+    <li id="customer-docs">
+        <a href="/Client/Docs">Документы и акты</a>
+    </li>
+        <li id="customer-reports">
+            <a href="/Reports?mode=Reports">Отчёты и сверки</a>
+        </li>
+        <li id="customer-exports">
+            <a href="/Reports?mode=Exports">Выгрузка данных</a>
+        </li>
+        <li id="customer-declarations">
+            <a href="/Declarations/Simple">Декларации</a>
+        </li>
+<li id="customer-help">
+    <a href="/Help/ConnectToEgais">Помощь</a>
+</li>
+<li id="customer-contacts">
+    <a href="/Help/Contacts">Контакты</a>
+</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        ЦентрИКТ
+                            <span>(ООО Центр ИКТ КПП 772501001)</span>
+                          <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Organisation/Choose">Выбрать другую организацию</a></li>
+                    </ul>
+                </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    var menu = $('#mainmenu');
+    var activeItemName = 'menu-customer-home';
+    if (activeItemName != '') {
+        var activeItem = $('#' + activeItemName, menu);
+        activeItem.addClass('active');
+    }
+</script>            <div class="container-fluid" style="padding-right: 55px !important;">
+                <div class="content" style="min-height: 694px;">
+                    
+
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="myPageHeader">Руководство пользователя AlcoSpot ЕГАИС и техподдержка</div>
+<div class="space-bottom-big">
+    <p>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</p>
+    <a class="btn btn-primary" href="http://alcospot.ru/Content/AlcoSpot_EGAIS_manual_latest.pdf">Скачать руководство</a>
+    <a class="btn btn-default" href="https://download.teamviewer.com/download/TeamViewerQS_ru.exe">Скачать TeamViewer</a>
+    <a class="btn btn-default" href="/Help/HowToUse">Видеоинструкция</a>
+</div>
+
+
+        <div class="alert alert-warning">
+            <p class="alert-header">
+                <span class="glyphicon glyphicon-warning-sign"></span>
+                Уважаемый пользователь портала AlcoSpot ЕГАИС!
+            </p>
+            <p class="alert-description">В соответствии с законодательством, до 01.10.2016 должны быть приведены к соответствию остатки алкогольной продукции в ЕГАИС и фактически присутствующие в торговой точке.</p>
+            <ol>
+                <li>Зайдите в раздел "Остатки продукции" и обновите их на текущую дату (дату инветаризации);</li>
+                <li>Перейдите в раздел "Отчеты и сверки" и сформируйте отчет-акт инветаризации остатков продукции в ЕГАИС и фактических остатков организации. После формирования отчета нажмите кнопку "скачать", откройте и распечатайте отчет;</li>
+                <li>Проведите фактическую инветаризацию в торговой точке, заполняя пустую графу "остаток факт., шт." в распечатанном акте. После проведения фактической инветаризации, сверьте фактические остатки с остатками ЕГАИС. Если продукция отсутствует или ее меньше, чем по данным ЕГАИС, то недостающее количество необходимо списать. Данное количество заносим в графу "Реализация, шт." распечатанного отчета. Если фактическое количество товара превышает остатки в ЕГАИС, то избыток необходимо поставить на баланс. Количество товара, превышающего остатки в ЕГАИС заносим в графу "Постановка на баланс, шт."</li>
+                <li>Переходим по очередно во вкладки "Акт постановки на баланс" и "Акт списания продукции". На основании сверки фактической инветаризации и остатков ЕГАИС, формируем два акта: акт постановки на баланс и акт списания продукции. По готовности отправляем в ЕГАИС.</li>
+            </ol>
+            <p class="alert-description">После завершения всех вышеописанных шагов фактические остатки будут совпадать.</p>
+            <p>C 01.10.2016 до 01.01.2017 - к началу этого периода ФС РАР ожидает, что все организации приведут в соответствие остатки в ЕГАИС со своими фактическими остатками и начнут работать корректно с двумя регистрами. В этот период информация по остаткам не будет использована регулятором в контрольной деятельности.</p>
+            <p><strong>Более подробная информация доступна <a href="https://egais.center-inform.ru/news/aktualnaya_informatsiya_po_ostatkam_ap_na_29_09_16/" target="_blank">здесь</a>.</strong>
+            </p>
+        </div>
+        <hr/>
+        <h3 style="margin-top: 10px;">ООО Центр ИКТ</h3>
+        <p>
+            <span class="grayText">ИНН: </span>
+            <span>7725753653</span>
+            <span class="grayText" style="padding-left: 20px;">КПП: </span>
+            <span>772501001</span>
+            <span class="grayText" style="padding-left: 20px;">Адрес: </span>
+            <span>Россия, 115280,МОСКВА г,АВТОЗАВОДСКАЯ ул,17 3,ОФИС 11</span>
+        </p>
+            <p>
+                <span class="grayText">Срок действия договора:</span>
+                <span>
+                    с 01.01.2016 
+                    до 01.01.2018 
+                </span>
+            </p>
+        <p>
+            <span class="grayText">Ключ ПК: </span>
+            <span>8389ff80ada000ad1b1cc4549ce72b71</span>
+        </p>
+        <p>
+            <span class="grayText">FSRAR_ID: </span>
+            <span>030000189404</span>
+        </p>
+        <hr/>
+
+        
+        <style>
+    .alert-header {
+        font-size: 16px;
+    }
+
+    .alert-description {
+        margin-top: 10px;
+    }
+
+    #final-ok {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+</style>
+
+<h3>Состояние служб на Вашем ПК</h3>
+
+        <div class="alert alert-warning">
+            <p class="alert-header">
+                <span class="glyphicon glyphicon-warning-sign"></span>
+                Служба AlcoSpot ЕГАИС запущена (версия 1.4.4.34)
+            </p>
+            <p class="alert-description">
+                Последняя актуальная версия службы - 1.4.4.32,
+                    <span> в ближайшее время произойдет автоматическое обновление, рекомендуется приостановить работу</span>
+            </p>
+        </div>
+        <div class="alert alert-success">
+            <p class="alert-header">
+                <span class="glyphicon glyphicon-ok-circle"></span>
+                УТМ доступен по адресу: http://127.0.0.1:8080/ (версия 1.0.15)
+            </p>
+        </div>
+            <div class="alert alert-success">
+                <p class="alert-header">
+                    <span class="glyphicon glyphicon-ok-circle"></span>
+                    Ваш FSRAR_ID 030000189404 совпадает с тем, который имеется в портале
+                </p>
+            </div>
+
+    <p class="text-success" id="final-ok">
+        <span class="glyphicon glyphicon-ok-circle"></span>
+        Все в порядке - можно продолжать работу.
+    </p>
+
+<hr />
+
+<script>
+    $(function () {
+        $('#button-restart-services').click(restartServices);
+    });
+
+    function restartServices() {
+        $('#p-restart-service').hide();
+        $('#p-restart-in-progress').show();
+        var url = '/Client/RestartServices';
+        processAjax(url, null,
+            function (success) {
+                $('#p-restart-service').show();
+                $('#p-restart-in-progress').hide();
+                if (success) {
+                    $('#p-restart-failed').hide();
+                    document.location = document.location;
+                }
+                else
+                    $('#p-restart-failed').show();
+            },
+            function (msg) {
+                $('#p-restart-service').show();
+                $('#p-restart-in-progress').hide();
+                DialogInfo(msg);
+            });
+    }
+</script>
+
+        <h3>Документы и акты</h3>
+        <p>
+            Просмотр входящих и исходящих документов, отправка и прием актов.
+        </p>
+        <a class="btn btn-primary" href="/Client/Docs">Перейти в раздел</a>
+        <br/>
+
+        <hr/>
+        <h3>Отчёты и сверки</h3>
+        <p>
+            Формирование отчётов для сверки данных ЕГАИС, просмотр ранее сформированных отчётов.
+        </p>
+<a class="btn btn-primary" href="/Reports">Перейти в раздел</a>        <br/>
+
+        <hr/>
+        <h3>Выгрузка данных</h3>
+        <p>
+            Выгрузка данных из портала в различных форматах, например, в формате импорта в Декларант-Алко. Просмотр ранее сформированных выгрузок.
+        </p>
+<a class="btn btn-primary" href="/Reports?mode=Exports">Перейти в раздел</a>        <br/>
+
+        <hr/>
+        <h3>Декларации</h3>
+        <p>
+            Редактирование деклараций, сформированных в разделе "Выгрузка данных".
+        </p>
+<a class="btn btn-primary" href="/Declarations/Simple">Перейти в раздел</a>        <br/>
+
+        <hr/>
+        <h3>Выбор организации</h3>
+        <p>Выбор одной из ваших подотчетных организаций и ее КПП для работы в портале. </p>
+        <a class="btn btn-primary" href="/Organisation/Choose">Перейти в раздел</a>
+
+
+    </div>
+    <div class="col-sm-1"></div>
+    
+</div>
+
+
+
+
+                </div>
+            </div>
+
+
+                
+        <div class="footer2">
+            <div class="container-fluid">
+                <div class="col-sm-6">
+                    <div class="footTel footTelPosF2">8 (499) 653-61-43</div><a href="#" class="butCallBack butCallBackPosF2 callBackControl">Сообщить о проблеме</a>
+                </div>
+                <div class="col-sm-6">
+                    <a class="footIcF2 footIcVideo" href="/Help/HowToUse">Видеоинструкция</a>
+                    <a class="footIcF2 footIcHelp" href="/Help/ConnectToEgais">Помощь</a>
+                    <a class="footIcF2 footIcCont" href="/Help/Contacts">Контакты</a>
+                </div>
+            </div>
+        </div>
+            <footer>
+                <div class="footerTop">
+                    <div class="container-fluid">
+                        <div class="col-sm-3">
+                            <div><div class="footTel footTelPos">8 (499) 653-61-43</div></div>
+                            <a href="#" class="butCallBack butCallBackPos callBackControl">Сообщить о проблеме</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a class="footIc footIcVideo" href="/Help/HowToUse">Видеоинструкция</a>
+                            <a class="footIc footIcHelp" href="/Help/ConnectToEgais">Помощь</a>
+                            <a class="footIc footIcCont" href="/Help/Contacts">Контакты</a>
+                        </div>
+
+                        <div class="footItems col-sm-3">
+                            <a href="/Client">Главная</a>
+                            <a href="/Client/Docs">Документы и акты</a>
+<a href="/Reports?mode=Reports">Отчёты и сверки</a>                        </div>
+                        <div class="footItems col-sm-3">
+<a href="/Reports?mode=Exports">Выгрузка данных</a>                            <a href="/Declarations/Simple">Декларации</a>                                                    </div>
+
+                        <br><br>
+
+                    </div>
+                </div>
+
+                <div class="footerBottom">
+                    <div class="container-fluid">
+                        <p>&copy; 2017 - ООО "Центр информационно-коммуникационных технологий" (ООО Центр ИКТ)</p>
+                    </div>
+                </div>
+            </footer>
+
+
+<script>
+    $(function () {
+        $.scrollUp();
+    });
+
+    $(function () {
+        var t = new CallbackRequestTopButton($('.callBackControl'), 'egais.alcospot.ru', 'https://doc.alcospot.ru:8090');
+    });
+
+</script>
+
+
+
+</body>
+</html>
