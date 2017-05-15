@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - ПОРТАЛ АЛКОСПОТ ЕГАИС</title>
+    
+    <link href="Content/css/css.css" rel="stylesheet"/>
+    
+    <link href="Content/footer.css" rel="stylesheet"/>
+    
+    <link href="Content/css/style2.css" rel="stylesheet"/>
+
+    <link href="https://egais.alcospot.ru/Content/Site.css" rel="stylesheet"/>
+
+    <link href="https://doc.alcospot.ru:8090/Content/callback-request.css" rel="stylesheet" />
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <script src="https://egais.alcospot.ru/bundles/jquery?v=Tx4K2BSWp7cY9xCnAkTCTSdrTSvQU1JIuVxQOqs2VGQ1"></script>
+
+    <script src="/bundles/bootstrap?v=mAM5VJntNPPew5SBx3BxQhdcQhYpO8lQc1Uz_6D5xCI1"></script>
+
+    
+    <script type='text/javascript' src='Content/js/jquery.scrollUp.min.js'></script>
+
+    <script>
+        $(function () {
+            $.scrollUp();
+        });
+        </script>
+        
+        <script>
+       $(document).ready(function () { 
+    var height_document = $(document).height(); 
+    var height_client = document.body.clientHeight; 
+     
+    if(height_document > height_client) { 
+        $("footer").addClass( "footerFix" ) 
+    } else 
+	{
+		$("footer").removeClass( "footerFix" )
+	}
+}); 
+        </script>
+    
+</head>
+<body>
+    <div class="container" style="vertical-align: middle;">
+        <a href="/">
+            <img src="https://egais.alcospot.ru/Content/Images/logo_alcospot.png" style="width: 232px; height: 57px; margin: 10px 10px;" />
+        </a>
+        <h4 style="display: inline-block; position: relative; top: 5px; color: #1B75BB;">ПОРТАЛ АЛКОСПОТ ЕГАИС</h4>
+        <span style="color: lightgrey; font-size: x-small; display: inline-block;">v&zwnj;2.7.10</span>
+            <a id="logoutMenu" href='/Account/Logout'>Выход</a>
+    </div>
+
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="mainmenu">
+            <ul class="nav navbar-nav navbar-left">
+
+
+    <li id="menu-customer-home">
+        <a href="/Client">Главная</a>
+    </li>
+    <li id="customer-docs">
+        <a href="/Client/Docs">Документы и акты</a>
+    </li>
+        <li id="customer-reports">
+            <a href="/Reports?mode=Reports">Отчёты и сверки</a>
+        </li>
+        <li id="customer-exports">
+            <a href="/Reports?mode=Exports">Выгрузка данных</a>
+        </li>
+<li id="customer-help">
+    <a href="/Help/ConnectToEgais">Помощь</a>
+</li>
+<li id="customer-contacts">
+    <a href="/Help/Contacts">Контакты</a>
+</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        ЦентрИКТ
+                            <span>(ООО Центр ИКТ КПП 772501001)</span>
+                          <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Organisation/Choose">Выбрать другую организацию</a></li>
+                    </ul>
+                </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    var menu = $('#mainmenu');
+    var activeItemName = 'menu-customer-home';
+    if (activeItemName != '') {
+        var activeItem = $('#' + activeItemName, menu);
+        activeItem.addClass('active');
+    }
+</script>    
+    <div class="container-fluid">
+        
+
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+    
+    <h2>Помощь и поддержка</h2>
+<div class="helpDiv">
+<h3>Руководство пользователя AlcoSpot ЕГАИС и техподдержка</h3>
+Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.
+<div style="margin: 20px 0 0 0">
+<div class="btn btn-primary btn-lg">Скачать руководство</div><div class="btn btn-primary btn-lg">Скачать TeamViewer</div><div class="btn btn-primary btn-lg">Видеоинструкция</div>
+</div>
+</div>
+
+<div class="helpBlock2">
+Все еще остались вопросы? Свяжитесь с нами <a href="#">удобным для Вас способом</a>
+</div>
+<hr>
+<div class="helpQuest">
+
+<h2>Часто задаваемые вопросы и ответы</h2>
+
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<div>
+
+<label>
+<strong>Посмотреть все вопросы</strong>
+<input name="" type="checkbox" value="">
+
+<span>
+
+<input name="" type="checkbox" value="">
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<input name="" type="checkbox" value="">
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<input name="" type="checkbox" value="">
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<input name="" type="checkbox" value="">
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<input name="" type="checkbox" value="">
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+<input name="" type="checkbox" value="">
+<label>
+<strong>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС</strong>
+<input name="" type="checkbox" value="">
+<span>Руководство пользователя описывает процедуру получения и установки службы AlcoSpot ЕГАИС на компьютер пользователя, её настройку, а также порядок пользования порталом AlcoSpot ЕГАИС для осуществления удаленного документооборота с Единой государственной автоматизированной информационной системой (ЕГАИС). Настоятельно рекомендуем для ознакомления. Также для удобства предоставления технической поддержки просим вас скачать и установить TeamViewer.</span>
+</label>
+
+</span>
+
+</label>
+
+</div>
+
+</div>
+
+
+<div class="helpInst">
+
+<h3>Инструкция по подключению к AlcoSpot ЕГАИС</h3>
+
+<p>
+    Спасибо за проявленный интерес к нашим услугам! 
+    Пожалуйста, внимательно прочтите данную инструкцию для того, чтобы начать пользоваться порталом AlcoSpot ЕГАИС.
+</p>
+
+<p>Для подключения к AlcoSpot ЕГАИС следует пройти следующие этапы:</p>
+
+<ol>
+    <li>
+        <p>Необходимо приобрести носитель JaCarta с установленным сертификатом КЭП.</p>
+    </li>
+    <li>
+        <p>
+            Установить на носитель JaCarta RSA-сертификат из Личного кабинета на сайте <a href="http://egais.ru">http://egais.ru</a>.
+            Наша компания занимается изготовлением носителей JaCarta и устанавливает на них необходимые для работы сертификаты.
+        </p>
+        <p><img src="https://egais.alcospot.ru/Content/Images/Help/ConntectToEgais/image002.jpg" /></p>
+    </li>
+    <li>
+        <p>Скачать Универсальный транспортный модуль (УТМ) на компьютер находящийся в месте реализации алкогольной продукции.</p>
+        <p>Обязательные условия:</p>
+        <ul>
+            <li><p>Операционная система Microsoft Windows 7 и выше.</p></li>
+            <li><p>Браузер Internet Explorer.</p></li>
+            <li><p>В браузере должна быть включена поддержка Java (версия 1.7.55 или выше).</p></li>
+            <li><p>На компьютере должна быть установлена программа ФСРАР-крипто 2.</p></li>
+        </ul>
+        <p>
+            Подключить носитель JaCarta к компьютеру. Зайти на сайт <a href="http://egais.ru">http://egais.ru</a>. 
+            В правом верхнем углу нажать «войти в личный кабинет», нажать на кнопку «Ознакомиться с условиями и проверить их выполнение», далее нажать «Начать проверку».
+        </p>
+        <p><img src="https://egais.alcospot.ru/Content/Images/Help/ConntectToEgais/image003.jpg" /></p>
+        <p>После прохождения успешной проверки, нажать кнопку «Перейти в личный кабинет».</p>
+        <p><img src="https://egais.alcospot.ru/Content/Images/Help/ConntectToEgais/image001.png" /></p>
+        <p>
+            Появится надпись: «Введите ПИН код аппаратного ключа(ГОСТ)» (все необходимые коды указаны во вкладыше к носителю JaCarta, по умолчанию – «0987654321»). 
+            После ввода ПИН кода, нажать «Показать сертификаты», нажать на появившийся сертификат. 
+            Вы попали в личный кабинет.
+        </p>
+        <p>Выбрать вкладку «Транспортный модуль» и нажать ссылку на его скачивание.</p>
+    </li>
+    <li>
+        <p>После загрузки транспортного модуля (УТМ) перейти в папку, куда он был сохранен (обычно «Загрузки»), и запустить программу установки <strong>от имени администратора</strong>.</p>
+    </li>
+    <li>
+        <p>Следуя подсказкам на экране, установить транспортный модуль.</p>
+    </li>
+    <li>
+        <p>При запросе ввести ключи, для PKI укажите «11111111» (по умолчанию), а для ГОСТ – «0987654321» (так же по умолчанию).</p>
+    </li>
+    <li>
+        <p>
+            После завершения установки, проверьте работоспособность транспортного модуля. 
+            Для этого откройте браузер на том же компьютере, где установлен УТМ и перейдите по адресу <a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a>. 
+            Если открылась главная страница УТМ – он установлен на ваш ПК правильно. 
+        </p>
+        <p><img src="https://egais.alcospot.ru/Content/Images/Help/ConntectToEgais/image004.png" /></p>
+    </li>
+    <li>
+        <p>
+            Дождитесь письма с информацией о регистрации в портале AlcoSpot ЕГАИС. 
+            В нем вы получите ссылку для скачивания дистрибутива. 
+            Перейдите по ней и скачайте дистрибутив службы.        
+        </p>
+    </li>
+    <li>
+        <p>
+            На ваш компьютер загрузится файл установки службы AlcoSpot ЕГАИС. 
+            Найдите этот файл в папке, куда он был загружен (обычно «Загрузки») и запустите его (могут потребоваться права администратора). 
+        </p>
+    </li>
+    <li>
+        <p>
+            Выполните все указания по установке службы.
+        </p>
+    </li>
+    <li>
+        <p>
+            По окончанию установки запустится утилита (программа) конфигурирования службы AlcoSpot ЕГАИС. 
+            Заполните все поля на вкладке «Основные сведения».
+        </p>
+        <p><img src="https://egais.alcospot.ru/Content/Images/Help/ConntectToEgais/image005.png" /></p>
+        <p>
+            Если вы используете специфические настройки сети, перейдите на вкладку «Сетевые настройки» и заполните необходимые поля. 
+            По окончанию настройки нажмите кнопку «Применить и закрыть».
+        </p>
+    </li>
+    <li>
+        <p>
+            Через несколько секунд служба AlcoSpot ЕГАИС будет запущена. 
+            Для проверки ее работы на компьютере, где она была установлена, перейдите по адресу <a href="http://127.0.0.1:8888/Info">http://127.0.0.1:8888/Info</a>. 
+            Должна открыться страница, на которой будут сведения о службе.  
+            Убедитесь, что состояние службы «Ok» и УТМ доступен.
+        </p>
+        <p><img src="https://egais.alcospot.ru/Content/Images/Help/ConntectToEgais/image006.png" /></p>
+    </li>
+    <li>
+        <p>
+            Все готово к работе! 
+            Перейдите по адресу портала AlcoSpot ЕГАИС <a href="https://egais.alcospot.ru">https://egais.alcospot.ru</a>, и введите ваши имя пользователя и пароль для получения доступа к ЕГАИС.
+        </p>
+    </li>
+</ol>
+
+</div>
+    
+    </div>
+    
+    <div class="col-sm-1"></div>
+    
+</div>
+
+
+
+
+        </div>
+        
+       <br>
+       
+       <div class="footer2">
+       <div class="container-fluid">
+       <div class="col-sm-6">
+        <div class="footTel footTelPosF2">8 (499) 653-61-43</div><a href="#" class="butCallBack butCallBackPosF2">Обратный звонок</a>
+        </div>
+        <div class="col-sm-6">
+        <a href="#" class="footIcF2 footIcVideo">Видеоинструкция</a>
+        <a href="#" class="footIcF2 footIcHelp">Помощь</a>
+        <a href="#" class="footIcF2 footIcCont">Контакты</a>
+        </div>
+       </div>
+       </div>
+        
+        <footer>
+        
+        <div class="footerTop">
+        <div class="container-fluid">
+        
+        <div class="footItems col-sm-3">
+        <a href="#">Главная</a>
+        <a href="#">Документы и акты</a>
+        <a href="#">Отчёты и сверки</a>
+        </div>
+        
+        <div class="footItems col-sm-3">
+        <a href="#">Выгрузка данных</a>
+        <a href="#">Декларации</a>
+        <a href="#">Управление</a>
+        </div>
+        
+        <div class="col-sm-3">
+        <a href="#" class="footIc footIcVideo">Видеоинструкция</a>
+        <a href="#" class="footIc footIcHelp">Помощь</a>
+        <a href="#" class="footIc footIcCont">Контакты</a>
+        </div>
+        
+        <div class="col-sm-3">
+        <div><div class="footTel footTelPos">8 (499) 653-61-43</div></div>
+        <a href="#" class="butCallBack butCallBackPos">Обратный звонок</a>
+        </div>
+        
+        <br><br>
+
+        </div>
+        </div>
+             
+        <div class="footerBottom">
+        <div class="container-fluid">
+        <p>&copy; 2017 - ООО "Центр информационно-коммуникационных технологий" (ООО Центр ИКТ)</p>
+        </div>
+        </div>
+                
+        </div>
+           
+        </footer>
+        
+    
+    
+    <script>
+        $(function () {
+            var t = new CallbackRequestRightButton('egais.alcospot.ru', 'https://doc.alcospot.ru:8090');
+        });
+    </script>
+    
+    
+    
+
+
+</body>
+</html>

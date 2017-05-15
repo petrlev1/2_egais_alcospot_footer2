@@ -73,7 +73,7 @@
 .helpQuest span { display: block; margin: 9px 0 0 0; max-height: 0; overflow: hidden; color: #4D4D4D; }
 
 .helpQuest input { display: none }
-.helpQuest input:checked + span { max-height: 500px; transition: all ease 0.5s; }
+.helpQuest input:checked + span { max-height: 100px; transition: all ease 0.5s; }
 
 .helpInst { margin: 40px 0 0 0 }
 
