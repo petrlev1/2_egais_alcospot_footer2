@@ -1,0 +1,83 @@
+.inputSize1 {
+  font-size: 22px !important;
+  padding: 25px 15px;
+  color: #000000; }
+
+.inputSizeTextaria { padding: 15px; font-size: 16px; color: #000000; }
+
+.form-group h3 {
+  font-size: 16px;
+  color: #666666;
+  margin: 25px 0 5px 0; }
+
+.contRight { padding: 5px 50px; background-color: #F8F8F8; }
+
+.contRight h3 { margin: 30px 0 19px 0}
+
+.contRBcolor { background-color: #F8F8F8; }
+
+.contRight p { position: relative; font-size: 18px; }
+
+.icLine { position: relative; font-size: 18px; margin: 16px 0; padding: 0 0 0 40px}
+
+.icon1 { position: absolute; font-size: 26px; margin: 0 0 0 -40px }
+
+.contMap { width: 100%; height: 400px; background-image: url(map.gif); background-position: center; border-top: 5px #F8F8F8 solid; border-bottom: 1px #ffffff solid; }
+
+
+
+
+
+.docList { padding: 40px 40px 20px 40px; border-bottom: 1px #e7e7e7 solid; transition: all ease-out 0.3s; }
+
+.docList:hover { background-color: #f8f8f8; }
+
+.docList h3 { margin: 0 0 25px 0}
+
+.docsLinks { margin: 10px 0}
+
+.docsLinks a { position: relative; display: inline-block; font-size: 1.3em; padding: 10px 10px; margin: 1px 30px 1px 0 }
+
+/* Tooltip */
+.docsLinks .tooltip > .tooltip-inner {
+    background-color: #0075BD; 
+    color: #FFFFFF; 
+    padding: 15px;
+    font-size: 16px;
+}
+.docsLinks .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid #0075BD;
+  }
+
+
+
+
+.helpDiv { background-color: #B3E6FF; border: 1px #66CCFF solid; margin: 30px 0 0 0; padding: 20px 30px 10px 30px }
+
+.helpDiv h3 { margin: 0 0 15px 0; }
+
+.helpDiv .btn { margin: 0 40px 20px 0}
+
+.helpBlock2 { font-size: 26px; text-align: center; margin: 20px 0 0 0; padding: 5px 0; }
+
+.helpQuest { margin: 30px 0 0 0 }
+
+.helpQuest h2 { font-size: 26px; margin: 0 0 20px 0 }
+
+.helpQuest label { display: block; font-weight: 100; margin: 0 0 15px 0 }
+
+.helpQuest a { font-weight: bold; text-decoration: none; cursor: pointer; padding: 0 0 5px 0; border-bottom: 1px #CCCCCC dotted  }
+
+.helpQuest strong { font-weight: bold; text-decoration: none; cursor: pointer; padding: 0 0 5px 0; border-bottom: 1px #CCCCCC dotted; color: #337ab7  }
+
+.helpQuest span { display: block; margin: 9px 0 0 0; max-height: 0; overflow: hidden; color: #4D4D4D; }
+
+.helpQuest input { display: none }
+.helpQuest input:checked + span { max-height: 500px; transition: all ease 0.5s; }
+
+.helpInst { margin: 40px 0 0 0 }
+
+@media (max-width: 768px) {
+    .helpDiv .btn { display: block; width: 100% }
+}
+
